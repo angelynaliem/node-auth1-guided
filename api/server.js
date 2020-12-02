@@ -18,7 +18,7 @@ const sessionConfig = {
   secret: "keep it dark",
   cookie: {
     maxAge: 3600 * 1000, // 1000 milliseconds
-    secure: false,
+    secure: false, //true in production
     httpOnly: true,
   },
   resave: false,

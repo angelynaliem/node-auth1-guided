@@ -41,7 +41,9 @@ router.get("/logout", (req, res) => {
   if (req.session && req.session.user) {
     req.session.destroy((err) => {
       if (err) {
-        res.send();
+        res.send("error logging out");
+      } else {
+        res.send("good bye");
       }
     });
   }
